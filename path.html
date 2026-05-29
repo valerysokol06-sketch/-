@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Путь</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="logo" href="path.html">Путь</a>
+      <nav class="nav-links" aria-label="Основная навигация">
+        <ul class="nav-list">
+          <li><a href="about.html">О нас</a></li>
+          <li><a href="countries.html">Страны</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero hero--path hero--title-bottom">
+    <div class="container hero-content">
+      <h1>Путь</h1>
+      <div class="hero-search">
+        <input type="text" class="hero-search__input" name="destination" placeholder="Куда отправимся?" aria-label="Куда отправимся?" autocomplete="off">
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <p class="lead path-lead">Сайт с важными советами для путешествий.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title" id="path-popular-heading">Популярные страны</h2>
+        <div class="cards-grid">
+          <article class="card">
+            <div class="card-media card-media-china" role="img" aria-label="Китай: храм и фонари"></div>
+            <div class="card-body">
+              <h3 class="card-title">Китай</h3>
+              <a class="btn" href="index.html">Узнать подробнее</a>
+            </div>
+          </article>
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=700&q=80" alt="Австрия">
+            <div class="card-body">
+              <h3 class="card-title">Австрия</h3>
+              <button type="button" class="btn">Узнать подробнее</button>
+            </div>
+          </article>
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=700&q=80" alt="Дубай">
+            <div class="card-body">
+              <h3 class="card-title">Дубай</h3>
+              <button type="button" class="btn">Узнать подробнее</button>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-media card-media-japan" role="img" aria-label="Япония"></div>
+            <div class="card-body">
+              <h3 class="card-title">Япония</h3>
+              <button type="button" class="btn">Узнать подробнее</button>
+            </div>
+          </article>
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1521295121783-8a321d551ad2?auto=format&fit=crop&w=700&q=80" alt="Италия">
+            <div class="card-body">
+              <h3 class="card-title">Италия</h3>
+              <button type="button" class="btn">Узнать подробнее</button>
+            </div>
+          </article>
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1527631746610-bca00a040d60?auto=format&fit=crop&w=700&q=80" alt="Турция">
+            <div class="card-body">
+              <h3 class="card-title">Турция</h3>
+              <button type="button" class="btn">Узнать подробнее</button>
+            </div>
+          </article>
+        </div>
+        <p class="section-cta">
+          <a class="btn" href="countries.html">Узнать подробнее</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="section section--reviews">
+      <div class="container">
+        <h2 class="subtitle">Отзывы</h2>
+        <div class="reviews-marquee" aria-label="Отзывы, бегущая строка">
+          <div class="reviews-marquee__track">
+            <div class="reviews-marquee__group">
+              <article class="review-card">
+                <div class="review-card__top">
+                  <div class="review-card__user">
+                    <span class="review-card__icon-bubble review-card__icon-bubble--avatar" aria-hidden="true">
+                      <span class="review-card__avatar">
+                        <img class="review-card__avatar-img" src="images/image%2030.png" width="36" height="36" alt="">
+                      </span>
+                    </span>
+                    <div>
+                      <div class="review-card__name">Даниил Третьяков</div>
+                      <div class="review-card__meta">
+                        <time datetime="2024-04-20">20.04.2024</time>
+                        <span class="review-card__meta-sep">·</span>
+                        <span class="review-card__comments" aria-label="Комментариев: 5">
+                          <span class="review-card__icon-bubble review-card__icon-bubble--msg" aria-hidden="true">
+                            <span class="review-card__msg-icon">
+                              <img class="review-card__msg-img" src="images/image%2030%20(1).png" width="20" height="20" alt="">
+                            </span>
+                          </span>
+                          <span class="review-card__comments-count">5</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="review-card__thumbs">
+                    <img src="images/aaron-greenwood-xZDWEEMS3sA-unsplash.png" alt="">
+                    <img src="images/chastagner-thierry-HbRmgm1UQf4-unsplash.png" alt="">
+                    <img src="images/dabbas-eNAg2EJ8rp8-unsplash.png" alt="">
+                  </div>
+                </div>
+                <p class="review-card__text">Поразило, насколько здесь сочетаются древность и современность: утром гулял по старинным кварталам, а вечером оказался среди небоскрёбов. Маршрут оказался понятным и без лишней суеты.</p>
+                <a class="review-card__more" href="#">Подробнее...</a>
+              </article>
+              <article class="review-card">
+                <div class="review-card__top">
+                  <div class="review-card__user">
+                    <span class="review-card__icon-bubble review-card__icon-bubble--avatar" aria-hidden="true">
+                      <span class="review-card__avatar">
+                        <img class="review-card__avatar-img" src="images/image%2030.png" width="36" height="36" alt="">
+                      </span>
+                    </span>
+                    <div>
+                      <div class="review-card__name">Мария Сорокина</div>
+                      <div class="review-card__meta">
+                        <time datetime="2024-05-02">02.05.2024</time>
+                        <span class="review-card__meta-sep">·</span>
+                        <span class="review-card__comments" aria-label="Комментариев: 3">
+                          <span class="review-card__icon-bubble review-card__icon-bubble--msg" aria-hidden="true">
+                            <span class="review-card__msg-icon">
+                              <img class="review-card__msg-img" src="images/image%2030%20(1).png" width="20" height="20" alt="">
+                            </span>
+                          </span>
+                          <span class="review-card__comments-count">3</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="review-card__thumbs">
+                    <img src="images/francois-hoang-MFYlCoSm-0o-unsplash.png" alt="">
+                    <img src="images/koize-zdOEJ2mBBOk-unsplash.png" alt="">
+                    <img src="images/oriento-gy_DN08336U-unsplash.png" alt="">
+                  </div>
+                </div>
+                <p class="review-card__text">Очень удобно, что на сайте есть советы по сезону и примерный бюджет. Собрала поездку без турагента и всё сложилось спокойно.</p>
+                <a class="review-card__more" href="#">Подробнее...</a>
+              </article>
+              <article class="review-card">
+                <div class="review-card__top">
+                  <div class="review-card__user">
+                    <span class="review-card__icon-bubble review-card__icon-bubble--avatar" aria-hidden="true">
+                      <span class="review-card__avatar">
+                        <img class="review-card__avatar-img" src="images/image%2030.png" width="36" height="36" alt="">
+                      </span>
+                    </span>
+                    <div>
+                      <div class="review-card__name">Алексей Титов</div>
+                      <div class="review-card__meta">
+                        <time datetime="2024-03-18">18.03.2024</time>
+                        <span class="review-card__meta-sep">·</span>
+                        <span class="review-card__comments" aria-label="Комментариев: 4">
+                          <span class="review-card__icon-bubble review-card__icon-bubble--msg" aria-hidden="true">
+                            <span class="review-card__msg-icon">
+                              <img class="review-card__msg-img" src="images/image%2030%20(1).png" width="20" height="20" alt="">
+                            </span>
+                          </span>
+                          <span class="review-card__comments-count">4</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="review-card__thumbs">
+                    <img src="images/ren-ran-HG5QX-GXV5A-unsplash.png" alt="">
+                    <img src="images/touann-gatouillat-vergos-hsscTvn6WlQ-unsplash.png" alt="">
+                    <img src="images/ying-wu-NsNRu6dfRds-unsplash.png" alt="">
+                  </div>
+                </div>
+                <p class="review-card__text">Подобрал перелёты и отель по подсказкам с раздела стран. Минимум стресса, максимум впечатлений.</p>
+                <a class="review-card__more" href="#">Подробнее...</a>
+              </article>
+              <article class="review-card">
+                <div class="review-card__top">
+                  <div class="review-card__user">
+                    <span class="review-card__icon-bubble review-card__icon-bubble--avatar" aria-hidden="true">
+                      <span class="review-card__avatar">
+                        <img class="review-card__avatar-img" src="images/image%2030.png" width="36" height="36" alt="">
+                      </span>
+                    </span>
+                    <div>
+                      <div class="review-card__name">Ангелина Зайцева</div>
+                      <div class="review-card__meta">
+                        <time datetime="2023-09-07">07.09.2023</time>
+                        <span class="review-card__meta-sep">·</span>
+                        <span class="review-card__comments" aria-label="Комментариев: 2">
+                          <span class="review-card__icon-bubble review-card__icon-bubble--msg" aria-hidden="true">
+                            <span class="review-card__msg-icon">
+                              <img class="review-card__msg-img" src="images/image%2030%20(1).png" width="20" height="20" alt="">
+                            </span>
+                          </span>
+                          <span class="review-card__comments-count">2</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="review-card__thumbs">
+                    <img src="images/chantal-lim-zLk4_n89FwA-unsplash.png" alt="">
+                    <img src="images/christian-lue-MEcebxDoxH8-unsplash.png" alt="">
+                    <img src="images/diego-jimenez-VDOHQLuYwy8-unsplash.png" alt="">
+                  </div>
+                </div>
+                <p class="review-card__text">Передвигаться по стране оказалось легко - скоростные поезда комфортные, метро доступное, навигация понятная даже туристу.</p>
+                <a class="review-card__more" href="#">Подробнее...</a>
+              </article>
+              <article class="review-card">
+                <div class="review-card__top">
+                  <div class="review-card__user">
+                    <span class="review-card__icon-bubble review-card__icon-bubble--avatar" aria-hidden="true">
+                      <span class="review-card__avatar">
+                        <img class="review-card__avatar-img" src="images/image%2030.png" width="36" height="36" alt="">
+                      </span>
+                    </span>
+                    <div>
+                      <div class="review-card__name">Егор Власов</div>
+                      <div class="review-card__meta">
+                        <time datetime="2023-11-14">14.11.2023</time>
+                        <span class="review-card__meta-sep">·</span>
+                        <span class="review-card__comments" aria-label="Комментариев: 1">
+                          <span class="review-card__icon-bubble review-card__icon-bubble--msg" aria-hidden="true">
+                            <span class="review-card__msg-icon">
+                              <img class="review-card__msg-img" src="images/image%2030%20(1).png" width="20" height="20" alt="">
+                            </span>
+                          </span>
+                          <span class="review-card__comments-count">1</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="review-card__thumbs">
+                    <img src="images/ming-han-low-xOfIAo3uBZE-unsplash.png" alt="">
+                    <img src="images/oriento-Rdmks85cLI8-unsplash.png" alt="">
+                    <img src="images/rita-chou-iYAF7dhw7yI-unsplash.png" alt="">
+                  </div>
+                </div>
+                <p class="review-card__text">Забронировал жильё по чек-листу с сайта - хозяин отзывчивый, район тихий, до центра недалеко. Такие мелочи экономят нервы.</p>
+                <a class="review-card__more" href="#">Подробнее...</a>
+              </article>
+              <article class="review-card">
+                <div class="review-card__top">
+                  <div class="review-card__user">
+                    <span class="review-card__icon-bubble review-card__icon-bubble--avatar" aria-hidden="true">
+                      <span class="review-card__avatar">
+                        <img class="review-card__avatar-img" src="images/image%2030.png" width="36" height="36" alt="">
+                      </span>
+                    </span>
+                    <div>
+                      <div class="review-card__name">София Лебедева</div>
+                      <div class="review-card__meta">
+                        <time datetime="2024-01-03">03.01.2024</time>
+                        <span class="review-card__meta-sep">·</span>
+                        <span class="review-card__comments" aria-label="Комментариев: 6">
+                          <span class="review-card__icon-bubble review-card__icon-bubble--msg" aria-hidden="true">
+                            <span class="review-card__msg-icon">
+                              <img class="review-card__msg-img" src="images/image%2030%20(1).png" width="20" height="20" alt="">
+                            </span>
+                          </span>
+                          <span class="review-card__comments-count">6</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="review-card__thumbs">
+                    <img src="images/velikaa-stena.png" alt="">
+                    <img src="images/hram-sanfen.png" alt="">
+                    <img src="images/yubin-zhou-CijOUjpWkuM-unsplash.png" alt="">
+                  </div>
+                </div>
+                <p class="review-card__text">Советы по еде и «нестандартным» местам оказались точными - без очередей и с нормальными ценами. Обязательно поеду ещё раз.</p>
+                <a class="review-card__more" href="#">Подробнее...</a>
+              </article>
+            </div>
+            <div class="reviews-marquee__group" aria-hidden="true">
+              <article class="review-card">
+                <div class="review-card__top">
+                  <div class="review-card__user">
+                    <span class="review-card__icon-bubble review-card__icon-bubble--avatar" aria-hidden="true">
+                      <span class="review-card__avatar">
+                        <img class="review-card__avatar-img" src="images/image%2030.png" width="36" height="36" alt="">
+                      </span>
+                    </span>
+                    <div>
+                      <div class="review-card__name">Даниил Третьяков</div>
+                      <div class="review-card__meta">
+                        <time datetime="2024-04-20">20.04.2024</time>
+                        <span class="review-card__meta-sep">·</span>
+                        <span class="review-card__comments" aria-label="Комментариев: 5">
+                          <span class="review-card__icon-bubble review-card__icon-bubble--msg" aria-hidden="true">
+                            <span class="review-card__msg-icon">
+                              <img class="review-card__msg-img" src="images/image%2030%20(1).png" width="20" height="20" alt="">
+                            </span>
+                          </span>
+                          <span class="review-card__comments-count">5</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="review-card__thumbs">
+                    <img src="images/aaron-greenwood-xZDWEEMS3sA-unsplash.png" alt="">
+                    <img src="images/chastagner-thierry-HbRmgm1UQf4-unsplash.png" alt="">
+                    <img src="images/dabbas-eNAg2EJ8rp8-unsplash.png" alt="">
+                  </div>
+                </div>
+                <p class="review-card__text">Поразило, насколько здесь сочетаются древность и современность: утром гулял по старинным кварталам, а вечером оказался среди небоскрёбов. Маршрут оказался понятным и без лишней суеты.</p>
+                <a class="review-card__more" href="#">Подробнее...</a>
+              </article>
+              <article class="review-card">
+                <div class="review-card__top">
+                  <div class="review-card__user">
+                    <span class="review-card__icon-bubble review-card__icon-bubble--avatar" aria-hidden="true">
+                      <span class="review-card__avatar">
+                        <img class="review-card__avatar-img" src="images/image%2030.png" width="36" height="36" alt="">
+                      </span>
+                    </span>
+                    <div>
+                      <div class="review-card__name">Мария Сорокина</div>
+                      <div class="review-card__meta">
+                        <time datetime="2024-05-02">02.05.2024</time>
+                        <span class="review-card__meta-sep">·</span>
+                        <span class="review-card__comments" aria-label="Комментариев: 3">
+                          <span class="review-card__icon-bubble review-card__icon-bubble--msg" aria-hidden="true">
+                            <span class="review-card__msg-icon">
+                              <img class="review-card__msg-img" src="images/image%2030%20(1).png" width="20" height="20" alt="">
+                            </span>
+                          </span>
+                          <span class="review-card__comments-count">3</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="review-card__thumbs">
+                    <img src="images/francois-hoang-MFYlCoSm-0o-unsplash.png" alt="">
+                    <img src="images/koize-zdOEJ2mBBOk-unsplash.png" alt="">
+                    <img src="images/oriento-gy_DN08336U-unsplash.png" alt="">
+                  </div>
+                </div>
+                <p class="review-card__text">Очень удобно, что на сайте есть советы по сезону и примерный бюджет. Собрала поездку без турагента и всё сложилось спокойно.</p>
+                <a class="review-card__more" href="#">Подробнее...</a>
+              </article>
+              <article class="review-card">
+                <div class="review-card__top">
+                  <div class="review-card__user">
+                    <span class="review-card__icon-bubble review-card__icon-bubble--avatar" aria-hidden="true">
+                      <span class="review-card__avatar">
+                        <img class="review-card__avatar-img" src="images/image%2030.png" width="36" height="36" alt="">
+                      </span>
+                    </span>
+                    <div>
+                      <div class="review-card__name">Алексей Титов</div>
+                      <div class="review-card__meta">
+                        <time datetime="2024-03-18">18.03.2024</time>
+                        <span class="review-card__meta-sep">·</span>
+                        <span class="review-card__comments" aria-label="Комментариев: 4">
+                          <span class="review-card__icon-bubble review-card__icon-bubble--msg" aria-hidden="true">
+                            <span class="review-card__msg-icon">
+                              <img class="review-card__msg-img" src="images/image%2030%20(1).png" width="20" height="20" alt="">
+                            </span>
+                          </span>
+                          <span class="review-card__comments-count">4</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="review-card__thumbs">
+                    <img src="images/ren-ran-HG5QX-GXV5A-unsplash.png" alt="">
+                    <img src="images/touann-gatouillat-vergos-hsscTvn6WlQ-unsplash.png" alt="">
+                    <img src="images/ying-wu-NsNRu6dfRds-unsplash.png" alt="">
+                  </div>
+                </div>
+                <p class="review-card__text">Подобрал перелёты и отель по подсказкам с раздела стран. Минимум стресса, максимум впечатлений.</p>
+                <a class="review-card__more" href="#">Подробнее...</a>
+              </article>
+              <article class="review-card">
+                <div class="review-card__top">
+                  <div class="review-card__user">
+                    <span class="review-card__icon-bubble review-card__icon-bubble--avatar" aria-hidden="true">
+                      <span class="review-card__avatar">
+                        <img class="review-card__avatar-img" src="images/image%2030.png" width="36" height="36" alt="">
+                      </span>
+                    </span>
+                    <div>
+                      <div class="review-card__name">Ангелина Зайцева</div>
+                      <div class="review-card__meta">
+                        <time datetime="2023-09-07">07.09.2023</time>
+                        <span class="review-card__meta-sep">·</span>
+                        <span class="review-card__comments" aria-label="Комментариев: 2">
+                          <span class="review-card__icon-bubble review-card__icon-bubble--msg" aria-hidden="true">
+                            <span class="review-card__msg-icon">
+                              <img class="review-card__msg-img" src="images/image%2030%20(1).png" width="20" height="20" alt="">
+                            </span>
+                          </span>
+                          <span class="review-card__comments-count">2</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="review-card__thumbs">
+                    <img src="images/chantal-lim-zLk4_n89FwA-unsplash.png" alt="">
+                    <img src="images/christian-lue-MEcebxDoxH8-unsplash.png" alt="">
+                    <img src="images/diego-jimenez-VDOHQLuYwy8-unsplash.png" alt="">
+                  </div>
+                </div>
+                <p class="review-card__text">Передвигаться по стране оказалось легко - скоростные поезда комфортные, метро доступное, навигация понятная даже туристу.</p>
+                <a class="review-card__more" href="#">Подробнее...</a>
+              </article>
+              <article class="review-card">
+                <div class="review-card__top">
+                  <div class="review-card__user">
+                    <span class="review-card__icon-bubble review-card__icon-bubble--avatar" aria-hidden="true">
+                      <span class="review-card__avatar">
+                        <img class="review-card__avatar-img" src="images/image%2030.png" width="36" height="36" alt="">
+                      </span>
+                    </span>
+                    <div>
+                      <div class="review-card__name">Егор Власов</div>
+                      <div class="review-card__meta">
+                        <time datetime="2023-11-14">14.11.2023</time>
+                        <span class="review-card__meta-sep">·</span>
+                        <span class="review-card__comments" aria-label="Комментариев: 1">
+                          <span class="review-card__icon-bubble review-card__icon-bubble--msg" aria-hidden="true">
+                            <span class="review-card__msg-icon">
+                              <img class="review-card__msg-img" src="images/image%2030%20(1).png" width="20" height="20" alt="">
+                            </span>
+                          </span>
+                          <span class="review-card__comments-count">1</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="review-card__thumbs">
+                    <img src="images/ming-han-low-xOfIAo3uBZE-unsplash.png" alt="">
+                    <img src="images/oriento-Rdmks85cLI8-unsplash.png" alt="">
+                    <img src="images/rita-chou-iYAF7dhw7yI-unsplash.png" alt="">
+                  </div>
+                </div>
+                <p class="review-card__text">Забронировал жильё по чек-листу с сайта - хозяин отзывчивый, район тихий, до центра недалеко. Такие мелочи экономят нервы.</p>
+                <a class="review-card__more" href="#">Подробнее...</a>
+              </article>
+              <article class="review-card">
+                <div class="review-card__top">
+                  <div class="review-card__user">
+                    <span class="review-card__icon-bubble review-card__icon-bubble--avatar" aria-hidden="true">
+                      <span class="review-card__avatar">
+                        <img class="review-card__avatar-img" src="images/image%2030.png" width="36" height="36" alt="">
+                      </span>
+                    </span>
+                    <div>
+                      <div class="review-card__name">София Лебедева</div>
+                      <div class="review-card__meta">
+                        <time datetime="2024-01-03">03.01.2024</time>
+                        <span class="review-card__meta-sep">·</span>
+                        <span class="review-card__comments" aria-label="Комментариев: 6">
+                          <span class="review-card__icon-bubble review-card__icon-bubble--msg" aria-hidden="true">
+                            <span class="review-card__msg-icon">
+                              <img class="review-card__msg-img" src="images/image%2030%20(1).png" width="20" height="20" alt="">
+                            </span>
+                          </span>
+                          <span class="review-card__comments-count">6</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="review-card__thumbs">
+                    <img src="images/velikaa-stena.png" alt="">
+                    <img src="images/hram-sanfen.png" alt="">
+                    <img src="images/yubin-zhou-CijOUjpWkuM-unsplash.png" alt="">
+                  </div>
+                </div>
+                <p class="review-card__text">Советы по еде и «нестандартным» местам оказались точными - без очередей и с нормальными ценами. Обязательно поеду ещё раз.</p>
+                <a class="review-card__more" href="#">Подробнее...</a>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <div class="footer-top">
+        <nav class="footer-links" aria-label="Разделы в подвале">
+          <a href="about.html">О Проекте</a>
+          <a href="countries.html">Страны</a>
+          <a href="path.html">Отзывы</a>
+        </nav>
+        <a class="footer-email" href="mailto:Vibewaygotravelll@gmail.com">Vibewaygotravelll@gmail.com</a>
+      </div>
+      <nav class="footer-social" aria-label="Социальные сети">
+        <a class="footer-social-link" href="social-instagram.html" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <img class="footer-social-img" src="images/Instagram.png" width="40" height="40" alt="">
+        </a>
+        <a class="footer-social-link" href="social-pinterest.html" target="_blank" rel="noopener noreferrer" aria-label="Pinterest">
+          <img class="footer-social-img" src="images/Pinterest.png" width="40" height="40" alt="">
+        </a>
+        <a class="footer-social-link" href="social-telegram.html" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+          <img class="footer-social-img" src="images/Telegram.png" width="40" height="40" alt="">
+        </a>
+        <a class="footer-social-link" href="social-youtube.html" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+          <img class="footer-social-img" src="images/YouTube.png" width="40" height="40" alt="">
+        </a>
+        <a class="footer-social-link" href="social-tiktok.html" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+          <img class="footer-social-img" src="images/TikTok.png" width="40" height="40" alt="">
+        </a>
+        <a class="footer-social-link" href="social-behance.html" target="_blank" rel="noopener noreferrer" aria-label="Behance">
+          <img class="footer-social-img" src="images/Behance.png" width="40" height="40" alt="">
+        </a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
